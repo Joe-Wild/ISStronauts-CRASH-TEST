@@ -3,7 +3,7 @@ import inquirer
 def promptAction():
 
     questions = [
-        inquirer.List('done',
+        inquirer.Checkbox('done',
             message="What have you done?",
             choices=[
                 "1H Sport", 
@@ -22,8 +22,16 @@ def promptAction():
 
 def storeAction(action):
 
-    print('action "' + action + "' has been stored into the database")
+    print['action ' + action + " has been stored into the database "]
     print()
+
+string = "action" "done"
+list_elements = ["World", "!"]
+for element in list_elements:
+    string += " " + element
+print(string)  # Output: Hello World !
+
+
 
 def getAllStoredActions():
 
