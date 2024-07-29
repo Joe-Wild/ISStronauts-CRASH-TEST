@@ -3,26 +3,26 @@ import inquirer
 def promptAction():
 
     questions = [
-        inquirer.List('action',
-            message="qu'est ce que tu viens de faire?",
+        inquirer.List('done',
+            message="What have you done?",
             choices=[
-                "j'ai fait du sport", 
-                "j'ai lu",
-                "j'ai pris des photos", 
-                "j'ai fait l'apéro",
-                "rien, mais je veux voir mes actions"
+                "1H Sport", 
+                "30mn Reading ",
+                "1H Foreign languages", 
+                "30mn Pictures of Earth",
+                "2H Scientific Researches"
             ]        
         )
     ]
 
     answers = inquirer.prompt(questions)
 
-    return answers.get('action')
+    return answers.get('done')
 
 
 def storeAction(action):
 
-    print('the action "' + action + "' has been stored into the database")
+    print('action "' + action + "' has been stored into the database")
     print()
 
 def getAllStoredActions():
