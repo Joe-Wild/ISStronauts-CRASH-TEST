@@ -19,11 +19,12 @@ def promptAction():
     answers = inquirer.prompt(questions)
     return answers.get('done')
 
+
 def storeAction(actions):
     # Connect to MongoDB
-    client = MongoClient('mongodb://localhost:27017/')  # Adjust this if your MongoDB is not on localhost
-    db = client['actions_database']  # Create or use a database named 'actions_database'
-    collection = db['user_actions']  # Create or use a collection named 'user_actions'
+    myclient = pymongo.MongoClient('mongodb+srv://joewildtoybox:<WbGeAQOlWhTPGtU9>@jwdb.zfw3yct.mongodb.net ')  #Adjust this if your MongoDB is not on localhost
+    mydb = myclient['actions_database']  # Create or use a database named 'actions_database'
+    collection = mydb['Mydb']  # Create or use a collection named 'user_actions'
 
     # Prepare the document to insert
     document = {
@@ -35,6 +36,9 @@ def storeAction(actions):
     result = collection.insert_one(document)
 
     print(f"Actions stored successfully with ID: {result.inserted_id}")
+
+
+    print(myclient.Mydb())
 
 # Usage
 if __name__ == "__main__":

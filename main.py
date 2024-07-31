@@ -1,4 +1,5 @@
 import inquirer
+import matplotlib.pyplot as plt
 
 def promptAction():
 
@@ -19,11 +20,6 @@ def promptAction():
 
     return answers.get('done')
 
-
-def storeAction(action):
-
-    print['action ' + action + " has been stored into the database "]
-    print()
 
 string = "action" "done"
 list_elements = ["World", "!"]
