@@ -4,11 +4,11 @@ tasks = ["1H Sport", "30'' Reading", "1H Foreign languages","30'' Pictures of Ea
 
 window = Tk()
 
-SportImage = PhotoImage(file='Sport.png')
-ReadImage = PhotoImage(file='Read.png')
-LanguageImage = PhotoImage(file='Language.png')
-PicturesImage = PhotoImage(file='Pictures.png')
-ScienceImage = PhotoImage(file='Science.png')
+#SportImage = PhotoImage(file='Sport.png')
+#ReadImage = PhotoImage(file='Read.png')
+#LanguageImage = PhotoImage(file='Language.png')
+#PicturesImage = PhotoImage(file='Pictures.png')
+#ScienceImage = PhotoImage(file='Science.png')
 
 x = IntVar()
 
