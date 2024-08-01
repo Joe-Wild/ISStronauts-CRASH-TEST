@@ -14,7 +14,6 @@ class Habit:
     def is_habit_completed(self, date: date) -> bool:
         return date in self.completed_dates
 
-
 class HabitTracker:
     def __init__(self):
         self.habits: List[Habit] = []
