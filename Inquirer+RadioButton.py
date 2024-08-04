@@ -33,12 +33,12 @@ for index in range(len(tasks)):
                               text=tasks[index], #add txt to button
                               variable=x, #groups radioBs together is they shared the equal variable
                               value=index,  #assigns each radioB a different value
-                              padx = 25, #add padding an x axis
-                              font=("Impact",29),
+                              padx =49, #add padding an x axis
+                              font=("Impact",19),
                               image = tasksImages[index], #adds image to RadioB 
                               compound = 'left', #Position of the image
                               indicator = 0, #circle indicators
-                              width = 375, #Width Rb
+                              width =445, #Width 
                               command= check
                               )
 
