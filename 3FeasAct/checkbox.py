@@ -20,7 +20,7 @@ def promptAction():
     return answers.get('done')
 
 
-def storeAction(actions):
+#def storeAction(actions):
     # Connect to MongoDB
     myclient = pymongo.MongoClient('mongodb+srv://joewildtoybox:<WbGeAQOlWhTPGtU9>@jwdb.zfw3yct.mongodb.net ')  #Adjust this if your MongoDB is not on localhost
     mydb = myclient['actions_database']  # Create or use a database named 'actions_database'
