@@ -1,18 +1,20 @@
 from tkinter import *
 
+#List of the daily tasks that must be completed
+
 tasks = ["1H Sport", "30'' Reading", "1H Foreign languages","30'' Pictures of Earth","2H Scientific Researches"]
 
 def check():
     if(x.get()==0):
-        print("Sport done! Well played.")
+        print("Sport: Completed! > Well done.")
     elif(x.get()==1):
-        print("Reading done! Well played.")
+        print("Reading: Completed! > Well done.")
     elif(x.get()==2):
-        print("Learning foreign languages done! Well played.")
+        print("Learning foreign languages: Completed! > Well done.")
     elif(x.get()==3):
-        print("Pictures done! Well played.")
+        print("Pictures: Completed! > Well done.")
     elif(x.get()==4):
-        print("science done! Well played.")
+        print("Science: Completed! > Well done.")
     else:
         print("YOU SUCK")
  
