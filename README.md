@@ -2,7 +2,7 @@
 
 ## Installation instructions
 
-This app in coded in Python 3
+This app in coded in Python 3.11.7
 
 ## Dependencies
 
