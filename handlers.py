@@ -66,7 +66,6 @@ print("\nBroken habits on 2024-07-13:")
 for habit in tracker.get_incomplete_habits(date(2024, 7, 13)):
     print(f"- {habit.name}")
 
-#----------------------------------------------------------------------------
 
 
 
